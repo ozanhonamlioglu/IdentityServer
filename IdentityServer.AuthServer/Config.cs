@@ -45,7 +45,7 @@ namespace IdentityServer.AuthServer
                     ClientName = "Client 2 api",
                     ClientSecrets = new[] { new Secret("secret".Sha256()) },
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
-                    AllowedScopes = new[] { "api1.read", "api2.write", "api2.update" }
+                    AllowedScopes = new[] { "api1.read", "api1.update", "api2.write", "api2.update" }
                 }
             };
         }
