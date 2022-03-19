@@ -9,7 +9,7 @@ namespace IdentityServer.AuthServer
         {
             return new[]
             {
-                new ApiResource("resource_api1") { Scopes = { "api1.read", "api1.write", "api1.update" } },
+                new ApiResource("resource_api1") { Scopes = { "api1.read", "api1.write", "api1.update" }, ApiSecrets = {new Secret("secretapi".Sha256())} },
                 new ApiResource("resource_api2") { Scopes = { "api2.read", "api2.write", "api2.update" } }
             };
         }
